@@ -694,7 +694,7 @@ ul {
 .specialization {
   font-size: 14px;
   font-weight: 600;
-  color: #764ba2;
+  color: #fff;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
@@ -788,7 +788,6 @@ ul {
   transition: all 0.4s ease;
   text-transform: uppercase;
   letter-spacing: 0.8px;
-  box-shadow: 0 6px 25px rgba(251, 191, 36, 0.4);
   opacity: 0;
   transform: translateY(10px);
   transition: all 0.5s ease 0.3s;
