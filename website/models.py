@@ -92,3 +92,15 @@ class Testimonial(models.Model):
 
     def __str__(self):
         return self.name
+
+
+
+class Banners(models.Model):
+    name = models.CharField(max_length=255,default="",blank=True, null=True)
+    img = models.ImageField(upload_to="testimonials/", blank=True, null=True)  
+    created_at = models.DateTimeField(auto_now_add=True)
+    is_active = models.BooleanField(default=True) 
+    is_desktop = models.BooleanField(default=False) 
+
+    def __str__(self):
+        return self.name if self.name else "unknown"
